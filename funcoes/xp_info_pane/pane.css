@@ -1,0 +1,441 @@
+	#dhtmlgoodies_xpPane{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panelContent{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #829de5;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panelContent div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+
+
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel2{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel2Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #afafaf;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel2Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel2 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel2 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel2 .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+
+
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel3{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel3Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #fadc6d;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel3Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel3 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel3 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel3 .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+	
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel4{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel4Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #fadc6d;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel4Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel4 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel4 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel4 .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel5{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel5Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #fadc6d;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel5Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel5 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel5 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel5 .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+	
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel6{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel6Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #fadc6d;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel6Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel6 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel6 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel6 .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+
+
+
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel7{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel7Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #fadc6d;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel7Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel7 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel7 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel7 .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+
+
+
+
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel8{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel8Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #fadc6d;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel8Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel8 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel8 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel8 .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+
+
+
+
+
+
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel9{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel9Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #fadc6d;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel9Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel9 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel9 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel9 .topBar img{
+		float:right;
+		cursor:pointer;
+	}
+
+
+
+
+
+
+#dhtmlgoodies_xpPane .dhtmlgoodies_panel10{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;	
+	}
+	#dhtmlgoodies_xpPane .panel10Content{
+		font-size:0.7em;
+		background-color:#FFF;
+		border:1px solid #fadc6d;
+		padding-left:4px;
+		padding-right:4px;	
+		overflow:hidden;
+		position:relative;
+		clear:both;
+	}
+	#dhtmlgoodies_xpPane .panel10Content div{
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel10 .topBar{
+		background-image:url('images/bg_panel_top_right1.gif');
+		background-repeat:no-repeat;
+		background-position:top right;
+		height:22px;
+		padding-right:3px;
+		cursor:pointer;
+		overflow:hidden;		
+
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel10 .topBar span{
+		line-height:22px;
+		vertical-align:middle;
+		color:#000;
+		font-weight:bold;
+		float:left;
+		padding-left:7px;
+	}
+	#dhtmlgoodies_xpPane .dhtmlgoodies_panel10 .topBar img{
+		float:right;
+		cursor:pointer;
+	}

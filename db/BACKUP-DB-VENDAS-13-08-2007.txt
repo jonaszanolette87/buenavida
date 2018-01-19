@@ -1,0 +1,58 @@
+CREATE TABLE itens (
+	id int(11) NOT NULL auto_increment,
+	idvenda int(11),
+	idproduto int(11),
+	codigo int(5),
+	produto varchar(150),
+	quantidade int(3),
+	preco varchar(10),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO itens VALUES('19' , '15' , '1' , '54886' , 'Colônia Humor 4' , '10' , '5,00');
+INSERT INTO itens VALUES('20' , '15' , '2' , '12156' , 'Creme Macadamea Todo Dia' , '1' , '0,01');
+
+
+
+CREATE TABLE produtos (
+	id int(11) NOT NULL auto_increment,
+	codigo int(5),
+	produto varchar(150),
+	quantidade int(3),
+	preco varchar(10),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO produtos VALUES('1' , '54886' , 'Colônia Humor 4' , '12' , '5.000,00');
+INSERT INTO produtos VALUES('2' , '12156' , 'Creme Macadamea Todo Dia' , '0' , '30,00');
+INSERT INTO produtos VALUES('3' , '78154' , 'Colônia Kaiak Masculino 60ML' , '3' , '30,00');
+INSERT INTO produtos VALUES('4' , '24585' , 'Oleo de Bronzear' , '8' , '154,00');
+
+
+
+CREATE TABLE vendas (
+	id int(11) NOT NULL auto_increment,
+	data datetime,
+	idvendedor int(11),
+	vendedor varchar(100),
+	porcentagem int(2),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO vendas VALUES('15' , '2007-08-13 12:54:07' , '1' , 'Maisa Nunes Pereira' , '15');
+
+
+
+CREATE TABLE vendedores (
+	id int(11) NOT NULL auto_increment,
+	nome varchar(100),
+	porcentagem int(2),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO vendedores VALUES('1' , 'Maisa Nunes Pereira' , '15');
+INSERT INTO vendedores VALUES('2' , 'Roselaine Nunes Soares' , '20');
+INSERT INTO vendedores VALUES('3' , 'Zenara Brites' , '25');
+
+
+

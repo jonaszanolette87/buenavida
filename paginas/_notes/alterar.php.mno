@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_seleciona_paginas_site" value="name:id;datatype:int,name:politicadeprivacidade;datatype:blob,name:termosdeuso;datatype:blob,name:regrasdeuso;datatype:blob,name:perguntas;datatype:blob,name:contrato;datatype:blob" />
+</info>

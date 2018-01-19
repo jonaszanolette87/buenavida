@@ -1,0 +1,4 @@
+[25-Jan-2017 19:50:24] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/remarcacoes/alterar.php on line 44
+[25-Jan-2017 19:50:26] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/remarcacoes/alterar.php on line 44
+[26-Jan-2017 15:43:09] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/remarcacoes/alterar.php on line 44
+[06-Feb-2017 14:02:16] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/remarcacoes/alterar.php on line 44

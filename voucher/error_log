@@ -1,0 +1,4 @@
+[15-Jul-2016 11:35:15] PHP Warning:  mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'eticus_pnsf'@'localhost' (using password: YES) in /home/eticus/public_html/pnsf/Connections/conn.php on line 28
+[15-Jul-2016 11:35:15] PHP Fatal error:  Access denied for user 'eticus_pnsf'@'localhost' (using password: YES) in /home/eticus/public_html/pnsf/Connections/conn.php on line 28
+[26-Jan-2017 19:20:18] PHP Parse error:  syntax error, unexpected ':' in /home/eticus/public_html/pnsf/voucher/index.php on line 58
+[26-Jan-2017 19:24:12] PHP Parse error:  syntax error, unexpected '<' in /home/eticus/public_html/pnsf/voucher/index.php on line 68

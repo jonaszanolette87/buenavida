@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_seleciona_vendas_itens" value="name:id;datatype:int,name:id_venda;datatype:int,name:id_produto;datatype:int,name:qtd;datatype:int,name:valor;datatype:string,name:descontopercentual;datatype:string,name:descontoreal;datatype:real,name:valortotal;datatype:string,name:datacadastro;datatype:timestamp" />
+	<infoitem key="UD_seleciona_produtos" value="name:id;datatype:int,name:codigo;datatype:int,name:nome;datatype:string,name:referencia;datatype:string,name:codigodebarra;datatype:string,name:precocusto;datatype:string,name:precovenda;datatype:string,name:estoque;datatype:int,name:estoqueminimo;datatype:int,name:estoquecritico;datatype:int,name:estoquemaximo;datatype:int,name:observacoes;datatype:blob,name:propriedades;datatype:blob,name:foto1;datatype:string,name:dataultimaatualizacao;datatype:date,name:destaque;datatype:string,name:id_grupo;datatype:int,name:id_subgrupo;datatype:int,name:id_marca;datatype:int,name:id_fornecedoratual;datatype:int,name:descontinuado;datatype:string,name:data_cadastro;datatype:date" />
+</info>

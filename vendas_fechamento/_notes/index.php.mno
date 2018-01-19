@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_seleciona_vendas_fechamento" value="name:id;datatype:int,name:id_venda;datatype:int,name:id_formadepagamento;datatype:int,name:valor;datatype:string,name:ndoc;datatype:string,name:banco;datatype:string,name:conta;datatype:string,name:agencia;datatype:string,name:parcelas;datatype:int,name:dias;datatype:int,name:juros;datatype:string,name:taxaadm;datatype:string,name:primeirapara;datatype:int,name:database;datatype:date" />
+	<infoitem key="UD_seleciona_formasdepagamento" value="name:id;datatype:int,name:id_tipo;datatype:int,name:nome;datatype:string,name:diascredito;datatype:int,name:comissao;datatype:real,name:taxa;datatype:real,name:juros;datatype:real,name:intervalo;datatype:int,name:parcelas;datatype:int,name:diafaturamento;datatype:int,name:gerareceber;datatype:string,name:baixaautomatica;datatype:string" />
+</info>

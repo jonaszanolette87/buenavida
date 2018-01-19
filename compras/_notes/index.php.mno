@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_seleciona_vendas" value="name:id;datatype:int,name:id_cliente;datatype:int,name:id_vendedor;datatype:int,name:datacadastro;datatype:date,name:id_formadepagamento;datatype:int,name:valor;datatype:string,name:ndoc;datatype:string,name:banco;datatype:int,name:agencia;datatype:string,name:conta;datatype:string,name:parcelas;datatype:int,name:dias;datatype:int,name:juros;datatype:string,name:taxaadm;datatype:string,name:primeirapara;datatype:int,name:database;datatype:date,name:status;datatype:string" />
+</info>

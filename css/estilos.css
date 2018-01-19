@@ -1,0 +1,152 @@
+arset "utf-8";
+/* CSS Document */
+
+body {
+	margin-top: 0;
+	margin-left: 0;
+	background-color: #C7C7C7;
+}
+
+
+#form1 #pesquisar {
+}
+textarea {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #036;
+	border: 1px solid #999;
+}
+
+
+a {
+	text-decoration: none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+}
+
+
+th {
+	padding:5px;
+	background-color:#CCC;
+	color:#036;
+	font-size:12px;
+	text-align:left;
+	border-bottom:#CCC 1px solid;
+	border-collapse:collapse;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+select {
+	background-color: #FFF;
+	border: 1px solid #999;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #036;
+}
+img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+
+table tr td {
+	padding:2px;
+	border-collapse:collapse;
+}
+
+.tableconf {
+	width:600px;
+}
+table {	
+	
+	border-collapse: collapse;
+	
+}
+
+
+.corpo {
+	border:#999 1px solid;
+	border-collapse:collapse;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.titulo {
+	background-color:#333;
+	font-size:24px;
+	color:#CCC;
+	padding:10px;
+	font-weight:bold;
+}
+
+.centro {
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+.rodape {
+	background-color: #2C4454;
+	font-size: 12px;
+	color: #2957A4;
+	padding: 5px;
+	text-align: center;
+	clear: both;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.ativo{
+		background-color:#555555;
+		color:#ffffff;
+	}
+.claro{
+		background-color:#efefef;
+	}
+
+	
+.topo {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	height: 50px;
+	padding: 10px;
+	background-color: #2C4454;
+	margin: 0px;
+}
+#login {
+	position: relative;
+	margin: auto;
+	width: 590px;
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-radius: 11px;
+	color: #FFFFFF;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	background-color: #2957A4;
+	
+	box-shadow: 1px 1px 5px;
+	height: 250px;
+}
+.odd {
+	background-color: #eee;
+}

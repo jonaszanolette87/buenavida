@@ -1,0 +1,12 @@
+[13-Jul-2011 17:07:08] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 14
+[13-Jul-2011 17:07:08] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 15
+[13-Jul-2011 17:07:08] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 16
+[13-Jul-2011 17:07:08] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 18
+[13-Jul-2011 17:07:08] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 19
+[13-Jul-2011 17:07:08] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 20
+[13-Jul-2011 17:10:08] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 14
+[13-Jul-2011 17:10:08] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 15
+[13-Jul-2011 17:10:08] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 16
+[13-Jul-2011 17:10:08] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 18
+[13-Jul-2011 17:10:08] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 19
+[13-Jul-2011 17:10:08] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwfort/public_html/sistema/configuracoes/zerar.php on line 20

@@ -1,0 +1,240 @@
+<?php require_once('../Connections/conn.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$editFormAction = $_SERVER['PHP_SELF'];
+if (isset($_SERVER['QUERY_STRING'])) {
+  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+}
+
+if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
+  $updateSQL = sprintf("UPDATE site SET 
+  secretaria =%s, diferenciais=%s, atividades_extracurriculares=%s, girassol_informa=%s, calendario_escolar=%s, 
+  galeria_fotos=%s, downloads=%s, colonia_ferias=%s, equipe_pedagogica=%s, agenda_mensal=%s,
+  mensagem=%s, roteiro_estudo=%s, ex_alunos=%s, historia=%s, jogos=%s, 
+  parceiros=%s, localizacao=%s, noticias=%s, turno_integral=%s, matriculas=%s, 
+  fale_conosco=%s, politicadeprivacidade=%s,  termosdeuso=%s, regrasdeuso=%s WHERE id=%s",
+  
+   GetSQLValueString($_POST['secretaria'], "text"),
+   GetSQLValueString($_POST['diferenciais'], "text"),   
+   GetSQLValueString($_POST['atividades_extracurriculares'], "text"),  
+   GetSQLValueString($_POST['girassol_informa'], "text"),   
+   GetSQLValueString($_POST['calendario_escolar'], "text"),
+   
+   GetSQLValueString($_POST['galeria_fotos'], "text"),   
+   GetSQLValueString($_POST['downloads'], "text"),
+   GetSQLValueString($_POST['colonia_ferias'], "text"),   
+   GetSQLValueString($_POST['equipe_pedagogica'], "text"),   
+   GetSQLValueString($_POST['agenda_mensal'], "text"),
+   
+   GetSQLValueString($_POST['mensagem'], "text"),   
+   GetSQLValueString($_POST['roteiro_estudo'], "text"),   
+   GetSQLValueString($_POST['ex_alunos'], "text"), 
+   GetSQLValueString($_POST['historia'], "text"),
+   GetSQLValueString($_POST['jogos'], "text"),
+   
+   GetSQLValueString($_POST['parceiros'], "text"),
+   GetSQLValueString($_POST['localizacao'], "text"), 
+   GetSQLValueString($_POST['noticias'], "text"), 
+   GetSQLValueString($_POST['turno_integral'], "text"),   
+   GetSQLValueString($_POST['matriculas'], "text"),
+   
+   GetSQLValueString($_POST['fale_conosco'], "text"),   
+   GetSQLValueString($_POST['politicadeprivacidade'], "text"),
+   GetSQLValueString($_POST['termosdeuso'], "text"),
+   GetSQLValueString($_POST['regrasdeuso'], "text"),			  
+   
+   GetSQLValueString($_POST['id'], "int"));
+
+  mysql_select_db($database_conn, $conn);
+  $Result1 = mysql_query($updateSQL, $conn) or die(mysql_error());
+
+  $updateGoTo = "../inicio/principal.php?t=paginas";
+  if (isset($_SERVER['QUERY_STRING'])) {
+    $updateGoTo .= (strpos($updateGoTo, '?')) ? "&" : "?";
+    $updateGoTo .= $_SERVER['QUERY_STRING'];
+  }
+  header(sprintf("Location: %s", $updateGoTo));
+}
+
+$colname_seleciona_paginas_site = "-1";
+if (isset($_GET['id'])) {
+  $colname_seleciona_paginas_site = $_GET['id'];
+}
+mysql_select_db($database_conn, $conn);
+$query_seleciona_paginas_site = sprintf("SELECT * FROM site WHERE id = %s", GetSQLValueString($colname_seleciona_paginas_site, "int"));
+$seleciona_paginas_site = mysql_query($query_seleciona_paginas_site, $conn) or die(mysql_error());
+$row_seleciona_paginas_site = mysql_fetch_assoc($seleciona_paginas_site);
+$totalRows_seleciona_paginas_site = mysql_num_rows($seleciona_paginas_site);
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="../css/estilos.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../../ckeditor/ckeditor.js"></script>
+<script src="../../ckeditor/sample.js" type="text/javascript"></script>
+<link href="../../ckeditor/sample.css" rel="stylesheet" type="text/css" />
+<link href="../css/estilos.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%">
+  <tr>
+    <th>PAGINAS</th>
+  </tr>
+  <tr>
+    <td>&nbsp;
+      <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="form1">
+        <table width="100%" align="center">
+          <tr valign="baseline">
+            <td width="12%" align="right" nowrap="nowrap">Id:</td>
+            <td width="88%"><?php echo $row_seleciona_paginas_site['id']; ?></td>
+          </tr>
+          <tr valign="baseline">
+            <th colspan="2" align="right" valign="middle" nowrap="nowrap">O COLEGIO</th>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">HISTORIA</td>
+            <td><textarea class="ckeditor" name="historia" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['historia'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">SECRETARIA</td>
+            <td><textarea class="ckeditor" name="secretaria" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['secretaria'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">DIFERENCIAIS</td>
+            <td><textarea name="diferenciais" cols="100" rows="10" class="ckeditor" id="diferenciais" ><?php echo htmlentities($row_seleciona_paginas_site['diferenciais'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">LOCALIZACAO</td>
+            <td><textarea class="ckeditor" name="localizacao" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['localizacao'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <th colspan="2" align="right" valign="middle" nowrap="nowrap">PEDAGOGICO</th>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">TURNO INTEGRAL</td>
+            <td><textarea class="ckeditor" name="turno_integral" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['turno_integral'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">ATIVIDADES EXTRACURRICULARES</td>
+            <td><textarea class="ckeditor" name="atividades_extracurriculares" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['atividades_extracurriculares'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">CALENDARIO ESCOLAR</td>
+            <td><textarea class="ckeditor" name="calendario_escolar" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['calendario_escolar'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">ROTEIRO ESTUDO</td>
+            <td><textarea class="ckeditor" name="roteiro_estudo" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['roteiro_estudo'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">EQUIPE PEDAGOGICA</td>
+            <td><textarea name="equipe_pedagogica" cols="100" rows="10" class="ckeditor" id="equipe_pedagogica" ><?php echo htmlentities($row_seleciona_paginas_site['equipe_pedagogica'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <th colspan="2" align="right" valign="middle" nowrap="nowrap">NOTICIAS</th>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">AGENDA MENSAL</td>
+            <td><textarea name="agenda_mensal" cols="100" rows="10" class="ckeditor" id="agenda_mensal" ><?php echo htmlentities($row_seleciona_paginas_site['agenda_mensal'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">GIRASSOL INFORMA:</td>
+            <td><textarea class="ckeditor" name="girassol_informa" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['girassol_informa'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <th colspan="2" align="right" valign="middle" nowrap="nowrap">AREA PARA OS PAIS</th>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">GALERIA DE FOTOS</td>
+            <td><textarea class="ckeditor" name="galeria_fotos" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['galeria_fotos'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">MENSAGEM</td>
+            <td><textarea name="mensagem" cols="100" rows="10" class="ckeditor" id="mensagem" ><?php echo htmlentities($row_seleciona_paginas_site['mensagem'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">JOGOS</td>
+            <td><textarea class="ckeditor" name="jogos" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['jogos'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">DOWNLOADS</td>
+            <td><textarea class="ckeditor" name="downloads" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['downloads'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">PARCEIRIOS</td>
+            <td><textarea name="parceiros" cols="100" rows="10" class="ckeditor" id="parceiros" ><?php echo htmlentities($row_seleciona_paginas_site['parceiros'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">MATRICULAS</td>
+            <td><textarea class="ckeditor" name="matriculas" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['matriculas'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">COLONIA DE FERIAS</td>
+            <td><textarea name="colonia_ferias" cols="100" rows="10" class="ckeditor" id="colonia_ferias" ><?php echo htmlentities($row_seleciona_paginas_site['colonia_ferias'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">FALE CONOSCO</td>
+            <td><textarea class="ckeditor" name="fale_conosco" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['fale_conosco'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">Politica de privacidade:</td>
+            <td><textarea class="ckeditor" name="politicadeprivacidade" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['politicadeprivacidade'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">Termos de uso:</td>
+            <td><textarea class="ckeditor" name="termosdeuso" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['termosdeuso'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td align="right" valign="middle" nowrap="nowrap">Regras de uso:</td>
+            <td><textarea class="ckeditor" name="regrasdeuso" cols="100" rows="10" ><?php echo htmlentities($row_seleciona_paginas_site['regrasdeuso'], ENT_COMPAT, 'utf-8'); ?></textarea></td>
+          </tr>
+          <tr valign="baseline">
+            <td nowrap="nowrap" align="right">&nbsp;</td>
+            <td><input type="submit" value="CONFIRMAR" /></td>
+          </tr>
+        </table>
+        <input type="hidden" name="MM_update" value="form1" />
+        <input type="hidden" name="id" value="<?php echo $row_seleciona_paginas_site['id']; ?>" />
+      </form>
+    <p>&nbsp;</p></td>
+  </tr>
+</table>
+</body>
+</html>
+<?php
+mysql_free_result($seleciona_paginas_site);
+?>

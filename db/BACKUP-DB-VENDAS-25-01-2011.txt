@@ -1,0 +1,286 @@
+CREATE TABLE categorias (
+	id int(11) NOT NULL auto_increment,
+	id_grupo int(11) NOT NULL ,
+	nome varchar(30) NOT NULL ,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO categorias VALUES('1' , '42' , 'CONTROLADORA RAID');
+INSERT INTO categorias VALUES('3' , '3' , 'CABO USB');
+INSERT INTO categorias VALUES('4' , '3' , 'CABO DE FORÇA');
+INSERT INTO categorias VALUES('5' , '3' , 'CABO SATA DE FORÇA');
+INSERT INTO categorias VALUES('6' , '3' , 'CABO SATA PARA HD');
+INSERT INTO categorias VALUES('7' , '42' , 'HD HOT-SWAP ');
+INSERT INTO categorias VALUES('9' , '1' , ' MOUSE PAD');
+INSERT INTO categorias VALUES('10' , '10' , 'RECEPTOR DIGITAL');
+INSERT INTO categorias VALUES('11' , '37' , 'ROTEADOR');
+INSERT INTO categorias VALUES('12' , '37' , 'ADAPTADOR USB');
+INSERT INTO categorias VALUES('13' , '33' , 'LGA 775');
+INSERT INTO categorias VALUES('14' , '33' , 'LGA 1156');
+INSERT INTO categorias VALUES('15' , '33' , 'LGA 1366');
+INSERT INTO categorias VALUES('16' , '33' , 'AM2');
+INSERT INTO categorias VALUES('17' , '16' , 'MATRICIAL');
+INSERT INTO categorias VALUES('18' , '16' , 'JATO DE TINTA');
+INSERT INTO categorias VALUES('19' , '16' , 'LASER MONO');
+INSERT INTO categorias VALUES('20' , '16' , 'LASER COLOR');
+INSERT INTO categorias VALUES('21' , '9' , 'SATA');
+INSERT INTO categorias VALUES('22' , '9' , 'HD IDE');
+INSERT INTO categorias VALUES('23' , '19' , 'SATA');
+INSERT INTO categorias VALUES('24' , '42' , 'TORRE');
+INSERT INTO categorias VALUES('25' , '1' , ' ');
+INSERT INTO categorias VALUES('26' , '22' , 'ALL-IN-ON');
+INSERT INTO categorias VALUES('27' , '9' , 'HD EXTERNO');
+INSERT INTO categorias VALUES('28' , '9' , 'HD SATA ');
+INSERT INTO categorias VALUES('29' , '40' , 'WIRELESS');
+
+
+
+CREATE TABLE clientes (
+	id int(11) NOT NULL auto_increment,
+	tipo char(1),
+	nome varchar(100) NOT NULL ,
+	endereco varchar(100),
+	bairro varchar(20),
+	complemento text,
+	cep varchar(10),
+	municipio varchar(30),
+	uf char(2),
+	fone varchar(13),
+	cpf varchar(14),
+	rg varchar(30),
+	cnpj varchar(18),
+	ie varchar(30),
+	id_vendedor int(11),
+	email varchar(80),
+	senha varchar(15),
+	site varchar(70),
+	ativo char(1),
+	id_tabela int(11),
+	limitedecredito decimal(10,2),
+	aberto decimal(10,2),
+	observacoes text,
+	data_cadastro datetime,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO clientes VALUES('4' , 'F' , 'MICHEL LIMA RIBEIRO' , 'RUA MOSENHOR HIPOLITO BRASIL' , 'HENRIQUE JORGE' , 'PROX  A PRACINHA' , '66.666-666' , 'FORTALEZA' , 'CE' , '(99)9999-9999' , '099.999.999-99' , NULL , NULL , NULL , '1' , 'michel23sud@hotmail.com' , '123' , 'www.google.com' , 'S' , '1' , '300.00' , NULL , NULL , NULL);
+INSERT INTO clientes VALUES('5' , 'F' , 'JOAO LUIS OLIVEIRA DA SILVA' , 'R JOAQUIM NABUCO , 3440 L' , 'DIONISIO TORRES' , NULL , '60.125-121' , 'FORTALEZA' , 'CE' , '(85)8685-7590' , '212.632.563-68' , NULL , NULL , NULL , '2' , 'joaoluissilva25@gmail.com' , 'firmeza' , NULL , 'S' , '1' , NULL , NULL , NULL , NULL);
+
+
+
+CREATE TABLE grupos (
+	id int(11) NOT NULL auto_increment,
+	nome varchar(30) NOT NULL ,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO grupos VALUES('1' , 'ACESSÓRIOS');
+INSERT INTO grupos VALUES('2' , 'BOLSA');
+INSERT INTO grupos VALUES('3' , 'CABO');
+INSERT INTO grupos VALUES('4' , 'CAIXA DE SOM');
+INSERT INTO grupos VALUES('5' , 'CALCULADORA');
+INSERT INTO grupos VALUES('6' , 'CAMERA DIGITAL');
+INSERT INTO grupos VALUES('7' , 'CARREGADOR');
+INSERT INTO grupos VALUES('8' , 'COOLER');
+INSERT INTO grupos VALUES('9' , 'DISCO RIGIDO');
+INSERT INTO grupos VALUES('10' , 'ELETRÔNICO');
+INSERT INTO grupos VALUES('11' , 'ESTABILIZADOR');
+INSERT INTO grupos VALUES('12' , 'FILMADORA');
+INSERT INTO grupos VALUES('13' , 'FONE DE OUVIDO');
+INSERT INTO grupos VALUES('14' , 'FONTE');
+INSERT INTO grupos VALUES('15' , 'GABINETE');
+INSERT INTO grupos VALUES('16' , 'IMPRESSORA');
+INSERT INTO grupos VALUES('17' , 'KIT GABINETE');
+INSERT INTO grupos VALUES('18' , 'KIT PLACA MÃE/CPU');
+INSERT INTO grupos VALUES('19' , 'LEITOR OTICO');
+INSERT INTO grupos VALUES('20' , 'MEMÓRIA');
+INSERT INTO grupos VALUES('21' , 'MICROFONE');
+INSERT INTO grupos VALUES('22' , 'MICRO MONTADO');
+INSERT INTO grupos VALUES('23' , 'MODEM');
+INSERT INTO grupos VALUES('24' , 'MODULO ISOLADOR');
+INSERT INTO grupos VALUES('25' , 'MONITOR');
+INSERT INTO grupos VALUES('26' , 'MOUSE');
+INSERT INTO grupos VALUES('27' , 'NAVEGADOR');
+INSERT INTO grupos VALUES('28' , 'NO BREAK');
+INSERT INTO grupos VALUES('29' , 'NOTEBOOK');
+INSERT INTO grupos VALUES('30' , 'PEN DRIVE');
+INSERT INTO grupos VALUES('31' , 'PLACA DE CAPTURA');
+INSERT INTO grupos VALUES('32' , 'PLACA DE VIDEO');
+INSERT INTO grupos VALUES('33' , 'PLACA MÃE');
+INSERT INTO grupos VALUES('34' , 'PROCESSADOR');
+INSERT INTO grupos VALUES('35' , 'PROJETOR/TELEFONIA');
+INSERT INTO grupos VALUES('36' , 'REDE ESTRUTURADA');
+INSERT INTO grupos VALUES('37' , 'REDE WIRELESS');
+INSERT INTO grupos VALUES('38' , 'SERVIÇO');
+INSERT INTO grupos VALUES('39' , 'SUPRIMENTO');
+INSERT INTO grupos VALUES('40' , 'TECLADO');
+INSERT INTO grupos VALUES('42' , 'SERVIDOR');
+INSERT INTO grupos VALUES('43' , 'CARTUCHO E TONER');
+INSERT INTO grupos VALUES('44' , 'WEB CAM');
+INSERT INTO grupos VALUES('45' , ' ');
+INSERT INTO grupos VALUES('46' , 'VENDA DIRETA');
+
+
+
+CREATE TABLE itens (
+	id int(11) NOT NULL auto_increment,
+	idvenda int(11),
+	idproduto int(11),
+	codigo int(5),
+	produto varchar(150),
+	quantidade int(3),
+	preco varchar(10),
+	PRIMARY KEY (id)
+);
+
+
+
+
+CREATE TABLE marcas (
+	id int(11) NOT NULL auto_increment,
+	nome varchar(60) NOT NULL ,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO marcas VALUES('1' , 'SAMSUNG');
+INSERT INTO marcas VALUES('2' , 'HP');
+INSERT INTO marcas VALUES('3' , 'SONY');
+INSERT INTO marcas VALUES('4' , 'LG');
+INSERT INTO marcas VALUES('5' , 'MARKVISION');
+INSERT INTO marcas VALUES('6' , 'IBM');
+INSERT INTO marcas VALUES('7' , 'KINGSTON');
+INSERT INTO marcas VALUES('8' , 'ASUS');
+INSERT INTO marcas VALUES('9' , 'PHITRONICS');
+INSERT INTO marcas VALUES('10' , 'MICROSOFT');
+INSERT INTO marcas VALUES('11' , 'ENCORE');
+INSERT INTO marcas VALUES('12' , 'COLETEK');
+INSERT INTO marcas VALUES('13' , 'C3 TECH');
+INSERT INTO marcas VALUES('14' , 'INTEL');
+INSERT INTO marcas VALUES('15' , 'D-LINK');
+INSERT INTO marcas VALUES('16' , 'TP-LINK');
+INSERT INTO marcas VALUES('17' , 'CCE');
+INSERT INTO marcas VALUES('18' , ' ');
+INSERT INTO marcas VALUES('19' , 'AOC');
+INSERT INTO marcas VALUES('20' , 'SEAGATE');
+
+
+
+CREATE TABLE permissoes (
+	id int(11) NOT NULL auto_increment,
+	id_usuario int(11) NOT NULL ,
+	usuarios varchar(4) default '0000' NOT NULL ,
+	clientes varchar(4) default '0000' NOT NULL ,
+	vendedores varchar(4) default '0000' NOT NULL ,
+	grupos varchar(4) default '0000' NOT NULL ,
+	categorias varchar(4) default '0000' NOT NULL ,
+	produtos varchar(4) default '0000' NOT NULL ,
+	marcas varchar(4) default '0000' NOT NULL ,
+	vendas varchar(4) default '0000' NOT NULL ,
+	destaques varchar(4) default '0001' NOT NULL ,
+	PRIMARY KEY (id),
+   KEY id_usuario (id_usuario)
+);
+
+INSERT INTO permissoes VALUES('6' , '1' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111');
+INSERT INTO permissoes VALUES('8' , '11' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('9' , '12' , '1111' , '1111' , '0000' , '0000' , '0000' , '0000' , '0000' , '1111' , '0000');
+INSERT INTO permissoes VALUES('10' , '13' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('11' , '14' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('12' , '15' , '1001' , '1001' , '1001' , '1001' , '1001' , '1001' , '1001' , '1001' , '0001');
+INSERT INTO permissoes VALUES('13' , '16' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('14' , '17' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('15' , '18' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('16' , '19' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('17' , '20' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('18' , '21' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('19' , '22' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('20' , '23' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('21' , '24' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('22' , '25' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001');
+INSERT INTO permissoes VALUES('23' , '26' , '0000' , '0001' , '0000' , '0000' , '0000' , '0000' , '0000' , '0000' , '0000');
+
+
+
+CREATE TABLE produtos (
+	id int(11) NOT NULL auto_increment,
+	codigo int(5),
+	nome varchar(150),
+	estoque int(11),
+	precodevenda varchar(10),
+	precodecusto varchar(10),
+	tabela2 varchar(10),
+	reduzirnanota char(1),
+	id_grupo int(11),
+	id_categoria int(11),
+	acabado char(1),
+	precocompra varchar(100),
+	customedio varchar(100),
+	id_marca int(11),
+	propriedades text,
+	entradafiscal int(11),
+	saidafiscal int(11),
+	descontinuado char(1),
+	garantia varchar(30),
+	destaque char(1),
+	importacupomfiscal char(1),
+	observacoes text,
+	data_cadastro datetime,
+	foto1 varchar(150),
+	foto2 varchar(150),
+	foto3 varchar(150),
+	foto4 varchar(150),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO produtos VALUES('1' , NULL , 'SERVIDOR IBM X3200 M3 XEON X3430 QC 2.4 GHZ/ 2GB UDIMM ' , NULL , '2.386,00' , '2.098,97' , '2.267,00' , NULL , '46' , '24' , NULL , NULL , NULL , '6' , 'Processador:  Intel Quad-Core Xeon X3430 \r\nClock do Processador (GHz):  2,4 \r\nCache de Processador (L2):  - \r\nCache de Processador (L3):  8 MB \r\nFSB (MHz):  1333 \r\nQtde de Processador Suportado:  1 \r\nMemória Padrão:  2GB ( 1 x 2GB) \r\nMemória Máxima:  32GB \r\nSlot de Memória Livre:  5 \r\nSlot de Memória Total:  6 \r\nBaias de Discos Livres:  3 \r\nBaias de Discos Ocupadas:  1 \r\nDisco Máximo:  4TB SATA / 2.4TB SAS \r\nDisco Rígido Padrão:  250GB \r\nInterface de Disco:  SAS/SATA \r\nControladora:  ServeRaid BR10il ( Raid 0,1,1E ) \r\nDrive de 1.44MB:  Opcional \r\nMídia Óptica:  CD-RW/DVD Combo \r\nPlaca de Rede (Mbps):  Dual Gigabit integrada \r\nPorta Paralela:  01 \r\nPorta USB:  06 \r\nSlot PCI:  2 \r\nSlot PCI-X:  Não \r\nSlot PCI Express (PCI-E):  3 \r\nFonte de Alimentação:  Fonte Fixa 400W \r\nGabinete:  Torre \r\nGarantia:  3 anos on site \r\nPeso Bruto:  25 \r\nFabricante:  IBM \r\nLinha:  Servidores ' , NULL , NULL , 'N' , '3 ANOS FABRICANTE ON SITE' , 'S' , 'N' , NULL , NULL , 'x3200.jpg' , '' , '' , '');
+INSERT INTO produtos VALUES('2' , NULL , 'SERVIDOR X3400M3 XEON E5620 QC 2.4GHZ/ 4GB ' , NULL , '5.487,00' , '4.390,11' , '5.213,00' , 'N' , '46' , '24' , 'S' , NULL , NULL , '6' , 'Processador:  Intel Quad-Core Xeon E5620 \r\nClock do Processador (GHz):  2,4 \r\nCache de Processador (L2):  - \r\nCache de Processador (L3):  12 MB \r\nFSB (MHz):  1066 \r\nQtde de Processador Suportado:  2 \r\nMemória Padrão:  4GB \r\nMemória Máxima:  128GB \r\nSlot de Memória Livre:  15 \r\nSlot de Memória Total:  16 \r\nBaias de Discos Livres:  8 \r\nBaias de Discos Ocupadas:  0 \r\nDisco Máximo:  4000GB SATA / 2400GB SAS \r\nDisco Rígido Padrão:  Opcional \r\nInterface de Disco:  SAS/SATA \r\nControladora:  ServeRaid M1015 ( Raid 0, 1, 10 ) \r\nDrive de 1.44MB:  Opcional \r\nMídia Óptica:  DVD-Rom \r\nPlaca de Rede (Mbps):  Dual Gigabit integrada \r\nPorta Paralela:  Não \r\nPorta USB:  06 \r\nSlot PCI:  1 \r\nSlot PCI-X:  Não \r\nSlot PCI Express (PCI-E):  5 \r\nFonte de Alimentação:  Suporta 2ª Fonte (Redundante) \r\nGabinete:  Torre \r\nGarantia:  3 anos on site \r\nPeso Bruto:  25 \r\nFabricante:  IBM \r\nLinha:  Servidores \r\n' , NULL , NULL , 'N' , '3 ANOS FABRICANTE ON SITE' , 'S' , 'N' , NULL , NULL , 'X3400.jpg' , '' , '' , '');
+INSERT INTO produtos VALUES('3' , NULL , 'SERVIDOR HP ML110 G6-588713 Xeon X3430 2GB 250GB DVDRW 4U' , NULL , '2.558,00' , '2.046,00' , '2.430,00' , 'N' , '46' , '24' , 'N' , NULL , NULL , '6' , 'Processador :  Intel Xeon \r\nMemória :  2GB DDR3 \r\nUnidade Óptica :  DVDRW \r\nUnidade de Disco Rígido :  250GB SATA 7200rpm \r\nFontes :  1 Fonte 300W \r\nChipset :  Intel \r\nSlots :  1 PCI 32 bits Full height, 2 PCIe x1 Full height, 1 PCIe x8 Full height \r\nSistema de Resfriamento :  1 ventilador de sistema, 1 ventilador p/ fonte \r\nRede :  10/100/1000Mbps RJ45 \r\nPortas :  1 Serial, 8 USB 2.0(4 traseiros, 2 painel frontal, 2 internos), 1 VGA, 2 PS2 \r\nForm Factor :  4U Torre \r\nTeclado :  Teclado \r\nMouse :  Mouse \r\nMedidas do produto (L/A/P) :  0 / 0 / 0 mm \r\nMedidas embalagem (L/A/P) :  540 / 310 / 860 mm \r\nPesos Bruto/Líquido :  19.00 / 0.00 kg \r\nGarantia :  36 meses \r\n' , NULL , NULL , 'N' , '3 ANOS FABRICANTE ' , 'S' , 'N' , NULL , NULL , 'ML110.jpg' , '' , '' , '');
+INSERT INTO produtos VALUES('4' , NULL , 'HD SATA 500 GB 5400 RPM' , NULL , '130,00' , '88,00' , '123,00' , 'N' , '9' , '21' , 'N' , NULL , NULL , '1' , NULL , NULL , NULL , 'N' , '1 ANO LOJA' , 'S' , 'N' , NULL , NULL , '365.jpg' , '' , '' , '');
+INSERT INTO produtos VALUES('7' , NULL , 'MICROCOMPUTADOR  AOC EVO 9223PS 18.5in NEO X2 L325 2GB 320GB Win 7' , NULL , '1.385,00' , '1.108,00' , '1.315,00' , 'N' , '46' , '26' , 'N' , NULL , NULL , '19' , 'Computador com Design Slim. Processador: AMD® AthlonTM Neo X2 L325 1,5GHz.Memória Cache L2: 1MB. Memória RAM: 2GB. HD: 320 GB SATA. Tela LCD 18,5” Widescreen.Resolução: 1366 x 768 pixels.Tempo de resposta: 5 ms. Contraste: 1000:1.Brilho: 250 (cd/m2). Leitor/Gravador de CD/DVD integrado. Webcam integrada de 1.3 Megapixel. Microfone integrado. Receptor de Wi-Fi b/g/n (até 300 Mbps) integrado.Leitor de Cartões 3 em 1 integrado (SD, MMC e MS). DSS Premium Sound (alto-falantes 2 x 2 Watts integrados). Teclado ABNT2 compacto PS2. Mouse óptico PS2. Wndows 7 Starter Português. Dimensões: 430mm (L) x 85mm (A). Vesa Mount (Padrão de Furação para Parede ou Painel).Entradas PS2 para mouse e teclado. Saída de áudio, entrada para microfone externo. 2 portas USB na lateral e 2 no painel traseiro.Rede: 10/100/1000 (gigabit)\r\n\r\n' , NULL , NULL , 'N' , '1 ANO FABRICANTE' , 'S' , 'N' , NULL , NULL , 'imagemCAQ849FV.jpg' , '' , '' , '');
+INSERT INTO produtos VALUES('8' , NULL , 'PLACA-MÃE ASUS P6X58D PREMIUM i7E/i7 DDR3 AUD/LAN ATX 1366' , NULL , '1.267,00' , '887,10' , '1.182,00' , 'N' , '33' , '15' , 'N' , NULL , NULL , '8' , 'Processador :  Intel \r\nSoquete :  1366  \r\nMemória :  Up to: 24GB DDR3 2000(O.C.)*/1600/1333/1066 MHz w/ 6 Sockets, Dual Channel \r\nChipset :  Intel X58 / ICH10R  \r\nControladora de Disco :  SATA300 w/ 6 Channels (RAID 0,1,5,10) \r\nÁudio :  Realtek ALC889 8-Channel High Definition Audio CODEC  \r\nRede :  2 10/100/1000Mbps \r\nForm Factor :  ATX \r\nSlots :  3 PCI Express 2.0 x16, 1 PCi Express x1, 2 PCI \r\nPortas :  4 USB 2.0 +4(opt),2 USB 3.0, IEEE 1394a, 1 Coaxial SPDIF, 1 Optical SPDIF 2 PS2 \r\nConector :  Fonte de Alimentação: 24pin + 8pin (12V) \r\nMedidas do produto (L/A/P) :  0 / 0 / 0 mm \r\nMedidas embalagem (L/A/P) :  370 / 110 / 310 mm \r\nPesos Bruto/Líquido :  2.52 / 0.00 kg \r\nGarantia :  12 meses \r\n' , NULL , NULL , 'N' , '1 ANO LOJA' , 'S' , 'N' , NULL , NULL , 'imagemCAVDDHEL.jpg' , '' , '' , '');
+INSERT INTO produtos VALUES('9' , NULL , 'HD EXT USB SEAGETE ST305004EXA101-RK 500GB USB 2.0 External 3.5in' , NULL , '184,00' , '128,54' , '172,00' , 'N' , '9' , '27' , 'N' , NULL , NULL , '20' , 'Padrão :  USB \r\nCapacidade :  500GB \r\nMedidas do produto (L/A/P) :  0 / 0 / 0 mm \r\nMedidas embalagem (L/A/P) :  245 / 220 / 80 mm \r\nPesos Bruto/Líquido :  1.18 / 1.10 kg \r\nGarantia :  12 meses \r\n' , NULL , NULL , 'N' , '1 ANO' , 'S' , 'N' , NULL , NULL , 'hd ex 3,5 seagate.jpg' , '' , '' , '');
+INSERT INTO produtos VALUES('10' , NULL , 'TECLADO MICROSOFT Arc USB Black* Arc USB 105 Key Wireless Port ' , NULL , '175,00' , '120,51' , '160,00' , 'N' , '40' , '29' , 'N' , NULL , NULL , '10' , 'Layout :  105 teclas \r\nInterface :  USB \r\nFeatures :  Cordless \r\nMedidas do produto (L/A/P) :  0 / 0 / 0 mm \r\nMedidas embalagem (L/A/P) :  320 / 40 / 160 mm \r\nPesos Bruto/Líquido :  0.60 / 0.00 kg \r\nGarantia :  12 meses \r\n' , NULL , NULL , 'N' , '1 NAO' , 'S' , 'N' , NULL , NULL , 'imagemCAZ7QAR7.jpg' , '' , '' , '');
+
+
+
+CREATE TABLE usuarios (
+	id int(11) NOT NULL auto_increment,
+	login varchar(30) NOT NULL ,
+	senha varchar(14) NOT NULL ,
+	nivel int(11) default '1' NOT NULL ,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO usuarios VALUES('1' , 'joaoluissilva25@gmail.com' , 'FIRMEZA' , '1');
+INSERT INTO usuarios VALUES('12' , 'michel23sud@hotmail.com' , '123' , '1');
+INSERT INTO usuarios VALUES('15' , 'jorusilva@hotmail.com' , 'joru6325' , '1');
+INSERT INTO usuarios VALUES('26' , 'javstaty@hotmail.com' , 'vega088' , '1');
+
+
+
+CREATE TABLE vendas (
+	id int(11) NOT NULL auto_increment,
+	data datetime,
+	idvendedor int(11),
+	vendedor varchar(100),
+	porcentagem int(2),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO vendas VALUES('36' , '2010-12-29 14:57:02' , '2' , 'JOAO LUIS' , '1');
+INSERT INTO vendas VALUES('37' , '2010-12-30 15:06:52' , '2' , 'JOAO LUIS' , '1');
+
+
+
+CREATE TABLE vendedores (
+	id int(11) NOT NULL auto_increment,
+	nome varchar(100),
+	porcentagem int(2),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO vendedores VALUES('2' , 'JOAO LUIS' , '1');
+INSERT INTO vendedores VALUES('1' , ' ' , '0');
+
+
+

@@ -1,0 +1,23 @@
+[18-Oct-2013 12:28:49] PHP Fatal error:  Call to undefined function  databrasil() in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/index.php on line 142
+[18-Oct-2013 12:28:52] PHP Fatal error:  Call to undefined function  databrasil() in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/index.php on line 142
+[20-Oct-2013 15:20:35] PHP Fatal error:  Unsupported operand types in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 46
+[20-Oct-2013 15:20:41] PHP Fatal error:  Unsupported operand types in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 46
+[20-Oct-2013 15:21:07] PHP Fatal error:  Unsupported operand types in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 46
+[23-Oct-2013 15:55:14] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 17
+[27-Oct-2013 16:43:02] PHP Fatal error:  Unsupported operand types in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 44
+[27-Oct-2013 16:43:08] PHP Fatal error:  Unsupported operand types in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 44
+[27-Oct-2013 16:49:54] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 24
+[27-Oct-2013 16:49:58] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 24
+[27-Oct-2013 16:51:03] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 24
+[27-Oct-2013 16:52:27] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 24
+[27-Oct-2013 16:53:15] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 24
+[27-Oct-2013 16:53:19] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_fechamento/valortotal.php on line 24
+[28-Jun-2016 17:48:44] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20
+[28-Jun-2016 17:53:25] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20
+[28-Jun-2016 18:00:48] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20
+[28-Jun-2016 18:03:10] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20
+[28-Jun-2016 18:06:57] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20
+[28-Jun-2016 18:08:24] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20
+[28-Jun-2016 19:00:40] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20
+[28-Jun-2016 19:00:53] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20
+[28-Jun-2016 19:00:54] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/eticus/public_html/pnsf/compras_fechamento/valortotal.php on line 20

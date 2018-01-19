@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_seleciona_marcas" value="name:id;datatype:int,name:nome;datatype:string" />
+	<infoitem key="UD_seleciona_grupos" value="name:id;datatype:int,name:nome;datatype:string" />
+	<infoitem key="UD_seleciona_categorias" value="name:id;datatype:int,name:id_grupo;datatype:int,name:nome;datatype:string" />
+</info>

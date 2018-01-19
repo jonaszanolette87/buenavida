@@ -1,0 +1,248 @@
+CREATE TABLE categorias (
+	id int(11) NOT NULL auto_increment,
+	id_grupo int(11) NOT NULL ,
+	nome varchar(30) NOT NULL ,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO categorias VALUES('1' , '42' , 'CONTROLADORA RAID');
+INSERT INTO categorias VALUES('3' , '3' , 'CABO USB');
+INSERT INTO categorias VALUES('4' , '3' , 'CABO DE FORÇA');
+INSERT INTO categorias VALUES('5' , '3' , 'CABO SATA DE FORÇA');
+INSERT INTO categorias VALUES('6' , '3' , 'CABO SATA PARA HD');
+INSERT INTO categorias VALUES('7' , '42' , 'HD HOT SUAP');
+INSERT INTO categorias VALUES('9' , '1' , ' MOUSE PAD');
+INSERT INTO categorias VALUES('10' , '10' , 'RECEPTOR DIGITAL');
+INSERT INTO categorias VALUES('11' , '37' , 'ROTEADOR');
+INSERT INTO categorias VALUES('12' , '37' , 'ADAPTADOR USB');
+INSERT INTO categorias VALUES('13' , '33' , 'LGA 775');
+INSERT INTO categorias VALUES('14' , '33' , 'LGA 1156');
+INSERT INTO categorias VALUES('15' , '33' , 'LGA 1366');
+INSERT INTO categorias VALUES('16' , '33' , 'AM2');
+
+
+
+CREATE TABLE clientes (
+	id int(11) NOT NULL auto_increment,
+	tipo char(1),
+	nome varchar(100) NOT NULL ,
+	endereco varchar(100),
+	bairro varchar(20),
+	complemento text,
+	cep varchar(10),
+	municipio varchar(30),
+	uf char(2),
+	fone varchar(13),
+	cpf varchar(14),
+	rg varchar(30),
+	cnpj varchar(18),
+	ie varchar(30),
+	id_vendedor int(11),
+	email varchar(80),
+	senha varchar(15),
+	site varchar(70),
+	ativo char(1),
+	id_tabela int(11),
+	limitedecredito decimal(10,2),
+	aberto decimal(10,2),
+	observacoes text,
+	data_cadastro datetime,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO clientes VALUES('4' , 'F' , 'MICHEL LIMA RIBEIRO' , 'RUA MOSENHOR HIPOLITO BRASIL' , 'HENRIQUE JORGE' , 'PROX  A PRACINHA' , '66.666-666' , 'FORTALEZA' , 'CE' , '(99)9999-9999' , '099.999.999-99' , NULL , NULL , NULL , '1' , 'michel23sud@hotmail.com' , '123' , 'www.google.com' , 'S' , '1' , '300.00' , NULL , NULL , NULL);
+INSERT INTO clientes VALUES('5' , 'F' , 'JOAO LUIS OLIVEIRA DA SILVA' , 'R JOAQUIM NABUCO , 3440 L' , 'DIONISIO TORRES' , NULL , '60.125-121' , 'FORTALEZA' , 'CE' , '(85)8685-7590' , '212.632.563-68' , NULL , NULL , NULL , '2' , 'joaoluissilva25@gmail.com' , 'firmeza' , NULL , NULL , '1' , NULL , NULL , NULL , NULL);
+
+
+
+CREATE TABLE grupos (
+	id int(11) NOT NULL auto_increment,
+	nome varchar(30) NOT NULL ,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO grupos VALUES('1' , 'ACESSÓRIOS');
+INSERT INTO grupos VALUES('2' , 'BOLSA');
+INSERT INTO grupos VALUES('3' , 'CABO');
+INSERT INTO grupos VALUES('4' , 'CAIXA DE SOM');
+INSERT INTO grupos VALUES('5' , 'CALCULADORA');
+INSERT INTO grupos VALUES('6' , 'CAMERA DIGITAL');
+INSERT INTO grupos VALUES('7' , 'CARREGADOR');
+INSERT INTO grupos VALUES('8' , 'COOLER');
+INSERT INTO grupos VALUES('9' , 'DISCO RIGIDO');
+INSERT INTO grupos VALUES('10' , 'ELETRÔNICO');
+INSERT INTO grupos VALUES('11' , 'ESTABILIZADOR');
+INSERT INTO grupos VALUES('12' , 'FILMADORA');
+INSERT INTO grupos VALUES('13' , 'FONE DE OUVIDO');
+INSERT INTO grupos VALUES('14' , 'FONTE');
+INSERT INTO grupos VALUES('15' , 'GABINETE');
+INSERT INTO grupos VALUES('16' , 'IMPRESSORA');
+INSERT INTO grupos VALUES('17' , 'KIT GABINETE');
+INSERT INTO grupos VALUES('18' , 'KIT PLACA MÃE/CPU');
+INSERT INTO grupos VALUES('19' , 'LEITOR OTICO');
+INSERT INTO grupos VALUES('20' , 'MEMÓRIA');
+INSERT INTO grupos VALUES('21' , 'MICROFONE');
+INSERT INTO grupos VALUES('22' , 'MICRO MONTADO');
+INSERT INTO grupos VALUES('23' , 'MODEM');
+INSERT INTO grupos VALUES('24' , 'MODULO ISOLADOR');
+INSERT INTO grupos VALUES('25' , 'MONITOR');
+INSERT INTO grupos VALUES('26' , 'MOUSE');
+INSERT INTO grupos VALUES('27' , 'NAVEGADOR');
+INSERT INTO grupos VALUES('28' , 'NO BREAK');
+INSERT INTO grupos VALUES('29' , 'NOTEBOOK');
+INSERT INTO grupos VALUES('30' , 'PEN DRIVE');
+INSERT INTO grupos VALUES('31' , 'PLACA DE CAPTURA');
+INSERT INTO grupos VALUES('32' , 'PLACA DE VIDEO');
+INSERT INTO grupos VALUES('33' , 'PLACA MÃE');
+INSERT INTO grupos VALUES('34' , 'PROCESSADOR');
+INSERT INTO grupos VALUES('35' , 'PROJETOR/TELEFONIA');
+INSERT INTO grupos VALUES('36' , 'REDE ESTRUTURADA');
+INSERT INTO grupos VALUES('37' , 'REDE WIRELESS');
+INSERT INTO grupos VALUES('38' , 'SERVIÇO');
+INSERT INTO grupos VALUES('39' , 'SUPRIMENTO');
+INSERT INTO grupos VALUES('40' , 'TECLADO');
+INSERT INTO grupos VALUES('42' , 'SERVIDOR');
+INSERT INTO grupos VALUES('43' , 'CARTUCHO E TONER');
+INSERT INTO grupos VALUES('44' , 'WEB CAM');
+INSERT INTO grupos VALUES('45' , ' ');
+
+
+
+CREATE TABLE itens (
+	id int(11) NOT NULL auto_increment,
+	idvenda int(11),
+	idproduto int(11),
+	codigo int(5),
+	produto varchar(150),
+	quantidade int(3),
+	preco varchar(10),
+	PRIMARY KEY (id)
+);
+
+
+
+
+CREATE TABLE marcas (
+	id int(11) NOT NULL auto_increment,
+	nome varchar(60) NOT NULL ,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO marcas VALUES('1' , 'SAMSUNG');
+INSERT INTO marcas VALUES('2' , 'HP');
+INSERT INTO marcas VALUES('3' , 'SONY');
+INSERT INTO marcas VALUES('4' , 'LG');
+INSERT INTO marcas VALUES('5' , 'MARKVISION');
+INSERT INTO marcas VALUES('6' , 'IBM');
+INSERT INTO marcas VALUES('7' , 'KINGSTON');
+INSERT INTO marcas VALUES('8' , 'ASUS');
+INSERT INTO marcas VALUES('9' , 'PHITRONICS');
+INSERT INTO marcas VALUES('10' , 'MICROSOFT');
+INSERT INTO marcas VALUES('11' , 'ENCORE');
+INSERT INTO marcas VALUES('12' , 'COLETEK');
+INSERT INTO marcas VALUES('13' , 'C3 TECH');
+INSERT INTO marcas VALUES('14' , 'INTEL');
+INSERT INTO marcas VALUES('15' , 'D-LINK');
+INSERT INTO marcas VALUES('16' , 'TP-LINK');
+INSERT INTO marcas VALUES('17' , 'CCE');
+
+
+
+CREATE TABLE permissoes (
+	id int(11) NOT NULL auto_increment,
+	id_usuario int(11) NOT NULL ,
+	usuarios varchar(4) default '1111' NOT NULL ,
+	clientes varchar(4) default '1111' NOT NULL ,
+	vendedores varchar(4) default '1111' NOT NULL ,
+	grupos varchar(4) default '1111' NOT NULL ,
+	categorias varchar(4) default '1111' NOT NULL ,
+	produtos varchar(4) default '1111' NOT NULL ,
+	marcas varchar(4) default '1111' NOT NULL ,
+	vendas varchar(4) default '1111' NOT NULL ,
+	PRIMARY KEY (id),
+   KEY id_usuario (id_usuario)
+);
+
+INSERT INTO permissoes VALUES('6' , '1' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111');
+INSERT INTO permissoes VALUES('8' , '11' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111');
+INSERT INTO permissoes VALUES('9' , '12' , '1111' , '1111' , '1111' , '1111' , '1111' , '0001' , '1111' , '0001');
+INSERT INTO permissoes VALUES('10' , '13' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111');
+INSERT INTO permissoes VALUES('11' , '14' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111' , '1111');
+INSERT INTO permissoes VALUES('12' , '15' , '0011' , '0011' , '0011' , '0011' , '0011' , '1111' , '0011' , '1111');
+
+
+
+CREATE TABLE produtos (
+	id int(11) NOT NULL auto_increment,
+	codigo int(5),
+	nome varchar(150),
+	estoque int(11),
+	precodevenda varchar(10),
+	precodecusto varchar(10),
+	tabela2 varchar(10),
+	reduzirnanota char(1),
+	id_grupo int(11),
+	id_categoria int(11),
+	acabado char(1),
+	precocompra varchar(100),
+	customedio varchar(100),
+	id_marca int(11),
+	propriedades text,
+	entradafiscal int(11),
+	saidafiscal int(11),
+	descontinuado char(1),
+	garantia int(11),
+	destaque char(1),
+	importacupomfiscal char(1),
+	observacoes text,
+	data_cadastro datetime,
+	foto1 varchar(150),
+	foto2 varchar(150),
+	foto3 varchar(150),
+	foto4 varchar(150),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO produtos VALUES('1' , NULL , 'SERVIDOR IBM X3200 M3 XEON X3430 QC 2.4 GHZ/ 2GB UDIMM ' , NULL , '2.798,00' , '2.098,97' , '2.546,00' , NULL , '42' , '1' , NULL , NULL , NULL , '1' , 'Processador:  Intel Quad-Core Xeon X3430 \r\nClock do Processador (GHz):  2,4 \r\nCache de Processador (L2):  - \r\nCache de Processador (L3):  8 MB \r\nFSB (MHz):  1333 \r\nQtde de Processador Suportado:  1 \r\nMemória Padrão:  2GB ( 1 x 2GB) \r\nMemória Máxima:  32GB \r\nSlot de Memória Livre:  5 \r\nSlot de Memória Total:  6 \r\nBaias de Discos Livres:  3 \r\nBaias de Discos Ocupadas:  1 \r\nDisco Máximo:  4TB SATA / 2.4TB SAS \r\nDisco Rígido Padrão:  250GB \r\nInterface de Disco:  SAS/SATA \r\nControladora:  ServeRaid BR10il ( Raid 0,1,1E ) \r\nDrive de 1.44MB:  Opcional \r\nMídia Óptica:  CD-RW/DVD Combo \r\nPlaca de Rede (Mbps):  Dual Gigabit integrada \r\nPorta Paralela:  01 \r\nPorta USB:  06 \r\nSlot PCI:  2 \r\nSlot PCI-X:  Não \r\nSlot PCI Express (PCI-E):  3 \r\nFonte de Alimentação:  Fonte Fixa 400W \r\nGabinete:  Torre \r\nGarantia:  3 anos on site \r\nPeso Bruto:  25 \r\nFabricante:  IBM \r\nLinha:  Servidores ' , NULL , NULL , 'N' , '3' , 'S' , NULL , NULL , NULL , '177177.jpg' , '' , '' , '');
+
+
+
+CREATE TABLE usuarios (
+	id int(11) NOT NULL auto_increment,
+	login varchar(30) NOT NULL ,
+	senha varchar(14) NOT NULL ,
+	nivel int(11) default '1' NOT NULL ,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO usuarios VALUES('1' , 'joaoluissilva25@gmail.com' , 'FIRMEZA' , '1');
+INSERT INTO usuarios VALUES('12' , 'michel23sud@hotmail.com' , '123' , '1');
+INSERT INTO usuarios VALUES('15' , 'jorusilva@hotmail.com' , 'joru6325' , '1');
+
+
+
+CREATE TABLE vendas (
+	id int(11) NOT NULL auto_increment,
+	data datetime,
+	idvendedor int(11),
+	vendedor varchar(100),
+	porcentagem int(2),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO vendas VALUES('36' , '2010-12-29 14:57:02' , '2' , 'JOAO LUIS' , '1');
+
+
+
+CREATE TABLE vendedores (
+	id int(11) NOT NULL auto_increment,
+	nome varchar(100),
+	porcentagem int(2),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO vendedores VALUES('2' , 'JOAO LUIS' , '1');
+INSERT INTO vendedores VALUES('1' , ' ' , '0');
+
+
+

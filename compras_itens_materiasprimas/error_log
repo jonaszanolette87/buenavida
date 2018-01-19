@@ -1,0 +1,2 @@
+[02-Dec-2013 15:49:02] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_itens_materiasprimas/valorcusto.php on line 14
+[02-Dec-2013 15:49:05] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/compras_itens_materiasprimas/valorcusto.php on line 14

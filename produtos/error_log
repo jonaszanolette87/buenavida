@@ -1,0 +1,5 @@
+[24-Jun-2011 11:41:57] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/wwwfort/public_html/sistemanovo/produtos/CADASTRAR.php on line 39
+[24-Jun-2011 11:41:57] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/wwwfort/public_html/sistemanovo/produtos/CADASTRAR.php on line 41
+[24-Jun-2011 12:18:44] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/wwwfort/public_html/sistemanovo/produtos/CADASTRAR.php on line 109
+[24-Jun-2011 13:21:23] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/wwwfort/public_html/sistemanovo/produtos/CADASTRAR.php on line 109
+[28-Jun-2016 17:21:43] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/eticus/public_html/pnsf/produtos/cadastrar.php on line 168

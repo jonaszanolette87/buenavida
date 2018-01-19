@@ -1,0 +1,1 @@
+[01-Dec-2011 16:26:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/slink/public_html/lojavirtual/sistema/Connections/conn.php:32) in /home/slink/public_html/lojavirtual/sistema/grupos/cadastrar.php on line 54

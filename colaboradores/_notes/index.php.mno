@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_seleciona_profissionais" value="name:id;datatype:int,name:nome;datatype:string,name:endereco;datatype:string,name:bairro;datatype:string,name:cidade;datatype:string,name:estado;datatype:string,name:cep;datatype:string,name:fone;datatype:string,name:celular;datatype:string,name:email;datatype:string,name:cpf;datatype:string,name:rg;datatype:string,name:id_cargo;datatype:int,name:setor;datatype:string,name:observacoes;datatype:blob,name:foto;datatype:string" />
+	<infoitem key="UD_seleciona_funcionarios" value="name:id;datatype:int,name:nome;datatype:string,name:endereco;datatype:string,name:bairro;datatype:string,name:cidade;datatype:string,name:uf;datatype:string,name:cep;datatype:string,name:telefone1;datatype:string,name:telefone2;datatype:string,name:email;datatype:string,name:cargo;datatype:string,name:setor;datatype:string,name:cpf;datatype:string,name:rg;datatype:string,name:dataadmissao;datatype:blob,name:salario;datatype:string,name:status;datatype:string,name:observacoes;datatype:blob,name:foto;datatype:string" />
+</info>

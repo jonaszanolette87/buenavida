@@ -1,0 +1,2 @@
+[21-Oct-2011 12:44:21] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/xtema712/public_html/ss_confec/contasareceber/alterar.php on line 178
+[21-Oct-2011 12:44:21] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/xtema712/public_html/ss_confec/contasareceber/alterar.php on line 179

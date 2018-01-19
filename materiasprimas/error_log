@@ -1,0 +1,2 @@
+[28-Nov-2013 17:01:22] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/materiasprimas/alterar.php on line 242
+[28-Nov-2013 17:01:27] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/wwwbrasi/public_html/sistemaweb/materiasprimas/alterar.php on line 242

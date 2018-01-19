@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_seleciona_contasapagar" value="name:id;datatype:int,name:noc;datatype:string,name:datacadastro;datatype:date,name:datavencimento;datatype:date,name:id_fornecedor;datatype:int,name:id_formadepagamento;datatype:int,name:id_banco;datatype:int,name:agencia;datatype:string,name:conta;datatype:string,name:ndoc;datatype:string,name:valor;datatype:string,name:historico;datatype:blob,name: valorpago;datatype:string,name:datapagamento;datatype:date,name:id_contadespesa;datatype:int,name:historico_despesa;datatype:blob,name:id_contacaixabanco;datatype:int,name:saldoatual;datatype:string,name:observacoes;datatype:blob" />
+</info>
